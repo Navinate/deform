@@ -1,0 +1,41 @@
+{
+  "name": "deform",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./dist --target browser --minify",
+    "dev": "bun run build --watch",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "typescript": "^5",
+    "lit": "^3.3.1"
+  },
+  "author": "Trey",
+  "license": "MIT",
+  "devDependencies": {
+    "storybook": "^10.1.4",
+    "@storybook/web-components-vite": "^10.1.4",
+    "@chromatic-com/storybook": "^4.1.3",
+    "@storybook/addon-vitest": "^10.1.4",
+    "@storybook/addon-a11y": "^10.1.4",
+    "@storybook/addon-docs": "^10.1.4",
+    "lit": "^3.3.1",
+    "vitest": "^4.0.15",
+    "playwright": "^1.57.0",
+    "@vitest/browser-playwright": "^4.0.15",
+    "@vitest/coverage-v8": "^4.0.15"
+  }
+}
