@@ -4,13 +4,9 @@ import { customElement, property } from "lit/decorators.js";
 @customElement("test-element")
 export class TestElement extends LitElement {
   static override styles = css`
-    button {
-      background: var(--primary, #6200ee);
-      color: white;
-      padding: 0.6rem 1rem;
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
+    div {
+      background-color: blue;
+      width: fit-content;
     }
   `;
 
