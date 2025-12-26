@@ -1,13 +1,46 @@
-[18:36:10.875] [INFO] [36mInitializing Storybook[39m
-[18:36:11.007] [DEBUG] Getting package.json info for /home/trey/Code/deform/package.json...
-[18:36:11.008] [DEBUG] Getting CLI versions from NPM for storybook...
-[18:36:11.008] [DEBUG] Executing command: npm info storybook version
-[18:36:11.731] [INFO] Adding Storybook version 10.1.4 to your project
-[18:36:11.735] [ERROR] Unable to initialize Storybook in this directory.
+[19:05:20.787] [INFO] storybook v10.1.4
+[19:05:20.928] [INFO] Loading main config failed as the file does not seem to be valid ESM. Trying a temporary fix, please ensure the main config is valid ESM.
+[19:05:21.298] [DEBUG] Getting package.json info for /home/trey/code/deform/package.json...
+[19:05:21.310] [ERROR] [38;2;241;97;97mSB_CORE-SERVER_0002 (CriticalPresetLoadError): Storybook failed to load the following preset: ./.storybook/main.ts.
 
-Storybook couldn't detect a supported framework or configuration for your project. Make sure you're inside a framework project (e.g., React, Vue, Svelte, Angular, Next.js) and that its dependencies are installed.
+Please check whether your setup is correct, the Storybook dependencies (and their peer dependencies) are installed correctly and there are no package version clashes.
 
-Tips:
-- Run init in an empty directory or create a new framework app first.
-- If this directory contains unrelated files, try a new directory for Storybook.
-[18:36:11.738] [INFO] Storybook collects completely anonymous usage telemetry. We use it to shape Storybook's roadmap and prioritize features. You can learn more, including how to opt out, at https://storybook.js.org/telemetry
+If you believe this is a bug, please open an issue on Github.
+
+ReferenceError: require is not defined in ES module scope, you can use import instead
+    at file://./.storybook/main.ts:1:17
+    at ModuleJob.run (node:internal/modules/esm/module_job:272:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:583:26)
+    at async importModule (file://./node_modules/storybook/dist/_node-chunks/chunk-Q6B5LJGA.js:732:11)
+    at async loadMainConfig (file://./node_modules/storybook/dist/_node-chunks/chunk-QZJSO2TW.js:11670:12)
+    at async buildDevStandalone (file://./node_modules/storybook/dist/core-server/index.js:7523:16)
+    at async withTelemetry (file://./node_modules/storybook/dist/_node-chunks/chunk-6KX7N5UF.js:205:12)
+    at async dev (file://./node_modules/storybook/dist/bin/core.js:2734:3)
+    at async _Command.<anonymous> (file://./node_modules/storybook/dist/bin/core.js:2801:92)
+
+More info: 
+[39m
+    at loadPreset (file://./node_modules/storybook/dist/_node-chunks/chunk-QZJSO2TW.js:10101:13)
+    at async Promise.all (index 1)
+    at async loadPresets (file://./node_modules/storybook/dist/_node-chunks/chunk-QZJSO2TW.js:10110:73)
+    at async getPresets (file://./node_modules/storybook/dist/_node-chunks/chunk-QZJSO2TW.js:10141:23)
+    at async buildDevStandalone (file://./node_modules/storybook/dist/core-server/index.js:7537:17)
+    at async withTelemetry (file://./node_modules/storybook/dist/_node-chunks/chunk-6KX7N5UF.js:205:12)
+    at async dev (file://./node_modules/storybook/dist/bin/core.js:2734:3)
+    at async _Command.<anonymous> (file://./node_modules/storybook/dist/bin/core.js:2801:92)
+[19:05:21.311] [WARN] Broken build, fix the error above.
+You may need to refresh the browser.
+[19:05:21.313] [WARN]   Failed to load preset: "/home/trey/code/deform/.storybook/main.ts"
+[19:05:21.314] [ERROR] [38;2;241;97;97mReferenceError: require is not defined in ES module scope, you can use import instead[39m
+    at file://./.storybook/main.ts:1:17
+    at ModuleJob.run (node:internal/modules/esm/module_job:272:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:583:26)
+    at async importModule (file://./node_modules/storybook/dist/_node-chunks/chunk-Q6B5LJGA.js:732:11)
+    at async loadMainConfig (file://./node_modules/storybook/dist/_node-chunks/chunk-QZJSO2TW.js:11670:12)
+    at async buildDevStandalone (file://./node_modules/storybook/dist/core-server/index.js:7523:16)
+    at async withTelemetry (file://./node_modules/storybook/dist/_node-chunks/chunk-6KX7N5UF.js:205:12)
+    at async dev (file://./node_modules/storybook/dist/bin/core.js:2734:3)
+    at async _Command.<anonymous> (file://./node_modules/storybook/dist/bin/core.js:2801:92)
+[19:05:21.320] [INFO] Loading main config failed as the file does not seem to be valid ESM. Trying a temporary fix, please ensure the main config is valid ESM.
+[19:05:21.329] [INFO] Loading main config failed as the file does not seem to be valid ESM. Trying a temporary fix, please ensure the main config is valid ESM.
+[19:05:21.344] [INFO] Loading main config failed as the file does not seem to be valid ESM. Trying a temporary fix, please ensure the main config is valid ESM.
